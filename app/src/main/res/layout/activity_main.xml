@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#CECECE"
+        tools:context="com.component.androidcustomcomponent.ui.MainActivity">
+
+        <com.component.androidcustomcomponent.customview.ListHeaderView
+            android:id="@+id/itemAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:txtButton="Tüm İşlemleri Gör"
+            app:txtTitle="HIZLI İŞLEMLER" />
+
+        <com.component.androidcustomcomponent.customview.ListHeaderView
+            android:id="@+id/itemWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:txtButton=""
+            app:txtTitle="HAFTALIK GÖREVLERİ" />
+
+        <com.component.androidcustomcomponent.customview.DonationView
+            android:id="@+id/donationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.component.androidcustomcomponent.customview.InvoiceView
+            android:id="@+id/invoiceView"
+            android:layout_marginStart="16dp"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            app:lottieFile="lottie.json"
+            app:title="Fatura Yansıtı aç sana özel ₺750’nin keyfini çıkarmaya başla"
+            app:button="Hemen Aç" />
+
+
+    </LinearLayout>
+</layout>
